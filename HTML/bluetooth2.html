@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+	<head>
+			<title> Velkommen til ProTemp </title>
+			<link rel = "stylesheet" type = "text/css" href = "format.css">
+			<meta name="viewport" content="width=device-width, initial-scale=1">
+			<script type="text/javascript" src="cordova.js"></script>	
+			<script type="text/javascript" src="js/index.js"></script>
+	</head>
+	
+	<body> 
+    <body onload="onLoad()">
+	<div id = "Bluetooth">
+	<hl> Velkommen til ProTemp </hl>
+	<p> Forbind til bluetooth og modtag temperatur </p>
+	<ul id="bleDeviceList"> </ul>  
+	<button id="refreshButton" onClick = "refreshDeviceList()">Refresh</button>
+	<br>
+	<div id="statusDiv">Status: Disconnected</div>
+	<div id="bleId">DeviceId:</div>
+	<div id="debugDiv"></div>
+	<br><br><br>
+	<p> Her er din temperatur </p>
+	<div id="receiveDiv"></div>
+</html>
